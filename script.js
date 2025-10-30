@@ -29,22 +29,26 @@ const player_input = document.getElementById("player_input");
         }
     
         if((user_choice == rock_ai && ai == scissors_ai) || (user_choice == paper_ai && ai == rock_ai) || (user_choice == scissors_ai && ai == paper_ai)){
-        alert(`Congratulations`);
+        divResult.textContent = `CONGRATULATIONS`;
     }
         else if((user_choice == rock_ai && ai == paper_ai) || (user_choice == paper_ai && ai == scissors_ai) || (user_choice == scissors_ai && ai == rock_ai)){
-        alert(`You lost`);
+        divResult.textContent = `You have LOST`;
     }
 
         else if((user_choice == rock_ai && ai == rock_ai) || (user_choice == paper_ai && ai == paper_ai) || (user_choice == scissors_ai && ai == scissors_ai)){
-        alert(`That was a draw`);
+        divResult.textContent = `That was a DRAW`;
     }
 
         else{
-        alert(`Pick a choice`);
+        divResult.textContent = `...`;
     }
     }
 
-for(let i = 0; i < 5; i++){
-    game();
-}
+const btn = document.querySelector("button");
+btn.addEventListener("click", game);
+
+const div = document.querySelector("div");
+const divResult = document.createElement("div");
+divResult.textContent = `...`;
+div.appendChild(divResult);
 
