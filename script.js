@@ -47,6 +47,16 @@ const player_input = document.getElementById("player_input");
 const btn = document.querySelector("button");
 btn.addEventListener("click", game);
 
+const rockBtn = document.querySelector("#rockBtn");
+rockBtn.addEventListener("click", user_choice = rock_ai)
+const paperBtn = document.querySelector("#paperBtn");
+paperBtn.addEventListener("click", user_choice = paper_ai)
+const scissorsBtn = document.querySelector("#scissorsBtn");
+scissorsBtn.addEventListener("click", user_choice = scissors_ai)
+
+
+
+
 const div = document.querySelector("div");
 const divResult = document.createElement("div");
 divResult.textContent = `...`;
