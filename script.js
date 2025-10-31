@@ -1,7 +1,4 @@
-/*
-const msg = document.getElementById("msg");
-const player_input = document.getElementById("player_input");
-*/
+
 
 const div = document.querySelector("#div");
 const divResult = document.createElement("div");
@@ -17,21 +14,7 @@ let user_choice;
 
 
         const ai = Math.floor(Math.random() * 3) + 1;
-        /*
-        user = window.prompt(`Add you choice here (rock, paper, scissors): `);
-        user = user.toLowerCase();
 
-        let user_choice;
-        if (user === "rock") {
-            user_choice = rock_ai;
-        } else if (user === "paper") {
-            user_choice = paper_ai;
-        } else if (user === "scissors") {
-            user_choice = scissors_ai;
-        } else {
-            return alert("Invalid choice!");
-        }
-        */
 
 
         if((user_choice == rock_ai && ai == scissors_ai) || (user_choice == paper_ai && ai == rock_ai) || (user_choice == scissors_ai && ai == paper_ai)){
@@ -50,9 +33,7 @@ let user_choice;
     }
     }
 
-/*const btn = document.querySelector("button");
-btn.addEventListener("click", game);
-*/
+
 
 const rockBtn = document.querySelector("#rockBtn");
 rockBtn.addEventListener("click", ()=> {user_choice = rock_ai; game()});
