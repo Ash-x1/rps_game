@@ -3,7 +3,7 @@ const msg = document.getElementById("msg");
 const player_input = document.getElementById("player_input");
 */
 
-const div = document.querySelector("div");
+const div = document.querySelector("#div");
 const divResult = document.createElement("div");
 divResult.textContent = `...`;
 div.appendChild(divResult);
