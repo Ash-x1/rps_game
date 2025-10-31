@@ -6,10 +6,12 @@
 }
 
 .main{
+    height: 60vh;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    justify-content: center;
 }
 
 .btn-div{
@@ -20,3 +22,22 @@
     justify-content: center;
 }
 
+img{
+    height: 40px;
+}
+
+button{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+button, img{
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover,
+button:hover img{
+    background-color: aqua;
+
+}
